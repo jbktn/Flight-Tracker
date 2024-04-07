@@ -5,7 +5,7 @@ Current version 1.0.1:
 - only tracks flights from [Cracow Balice airport (EPKK)](https://www.krakowairport.pl/pl/pasazer/loty/polaczenia/odloty).
 - barebones implementation
 
-###Future develpoment plans:
+### Future develpoment plans:
 
 Version 1.0.2 ***(in development)*** - Visual Side:
 - proper css implenetation
