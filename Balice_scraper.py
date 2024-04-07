@@ -31,6 +31,26 @@ def get_operator(code):
                     break
     return airline
 
+def clear_table(table, append_array):
+    for flight in table:
+        time = str(flight.find("th").text)
+        destination = str(flight.find_all("td")[0].text).replace("\n", "").replace("\t", "").replace(" ", "")
+        code = str(flight.find_all("td")[1].text).replace("\n", "").replace("\t", "").replace(" ", "")
+        status = str(flight.find("span").text).replace("\n", "").replace("\t", "").replace(" ", "")
+        link = "https://www.krakowairport.pl" + str(flight.find("a").get('href'))
+
+        airline = get_operator(code)
+
+        append_array.append({'Time': time, 'Destination': destination, 'Airline': airline,'Code': code,'Status': status, "Link": link})
+
+def print_flights(array):
+    for flight in array:
+        print(flight)
+
+def write_to_file(f, array):
+    for flight in array:
+        f.write(str(flight) + "\n")
+
 context = ssl._create_unverified_context()
 
 url_incoming = "https://www.krakowairport.pl/pl/pasazer/loty/polaczenia/przyloty/"
@@ -53,39 +73,16 @@ outgoing_unclear = table_outgoing.find_all('tr')[1:]
 incoming = []
 outgoing = []
 
-for flight in incoming_unclear:
-    time = str(flight.find("th").text)
-    destination = str(flight.find_all("td")[0].text).replace("\n", "").replace("\t", "").replace(" ", "")
-    code = str(flight.find_all("td")[1].text).replace("\n", "").replace("\t", "").replace(" ", "")
-    status = str(flight.find("span").text).replace("\n", "").replace("\t", "").replace(" ", "")
-    link = "https://www.krakowairport.pl" + str(flight.find("a").get('href'))
-
-    airline = get_operator(code)
-
-    incoming.append({'Time': time, 'Destination': destination, 'Airline': airline,'Code': code,'Status': status, "Link": link})
-
-for flight in outgoing_unclear:
-    time = str(flight.find("th").text)
-    destination = str(flight.find_all("td")[0].text).replace("\n", "").replace("\t", "").replace(" ", "")
-    code = str(flight.find_all("td")[1].text).replace("\n", "").replace("\t", "").replace(" ", "")
-    status = str(flight.find("span").text).replace("\n", "").replace("\t", "").replace(" ", "")
-    link = "https://www.krakowairport.pl" + str(flight.find("a").get('href'))
-
-    airline = get_operator(code)
-
-    outgoing.append({'Time': time, 'Destination': destination, 'Airline': airline,'Code': code,'Status': status, "Link": link})
-    
+clear_table(incoming_unclear, incoming)
+clear_table(outgoing_unclear, outgoing)
+   
 print("Incoming flights:")
-for flight in incoming:
-    print(flight)
+print_flights(incoming)
 print("Outgoing flights:")
-for flight in outgoing:
-    print(flight)
+print_flights(outgoing)
 
 f = open("c:/Users/delve/WebstormProjects/flight-tracker/Balice_data.txt", "w")
 f.write("Incoming:\n")
-for flight in incoming:
-    f.write(str(flight) + "\n")
+write_to_file(f, incoming)
 f.write("Outgoing:\n")
-for flight in outgoing:
-    f.write(str(flight) + "\n")
+write_to_file(f, outgoing)

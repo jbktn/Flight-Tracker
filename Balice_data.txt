@@ -1,15 +1,15 @@
 Incoming:
 {'Time': '22:40', 'Destination': 'STAMBU£(IST)', 'Airline': 'LOT', 'Code': 'LO140', 'Status': 'Wyl¹dowa³22:37', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/lo-140/07-04-2024/2240'}
 {'Time': '22:45', 'Destination': 'CATANIA(CTA)', 'Airline': 'Ryanair', 'Code': 'FR2727', 'Status': 'Wyl¹dowa³22:41', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/fr-2727/07-04-2024/2245'}
-{'Time': '22:50', 'Destination': 'ANKONA(AOI)', 'Airline': 'Ryanair', 'Code': 'FR4491', 'Status': 'Oczekiwany22:42', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/fr-4491/07-04-2024/2250'}
-{'Time': '23:20', 'Destination': 'MONACHIUM(MUC)', 'Airline': 'Lufthansa', 'Code': 'LH1626', 'Status': 'Oczekiwany23:26', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/lh-1626/07-04-2024/2320'}
-{'Time': '23:25', 'Destination': 'MEDIOLAN(MXP)', 'Airline': 'Wizz Air', 'Code': 'W62068', 'Status': 'Oczekiwany23:05', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/w6-2068/07-04-2024/2325'}
+{'Time': '22:50', 'Destination': 'ANKONA(AOI)', 'Airline': 'Ryanair', 'Code': 'FR4491', 'Status': 'Wyl¹dowa³22:43', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/fr-4491/07-04-2024/2250'}
+{'Time': '23:20', 'Destination': 'MONACHIUM(MUC)', 'Airline': 'Lufthansa', 'Code': 'LH1626', 'Status': 'Oczekiwany23:25', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/lh-1626/07-04-2024/2320'}
+{'Time': '23:25', 'Destination': 'MEDIOLAN(MXP)', 'Airline': 'Wizz Air', 'Code': 'W62068', 'Status': 'Oczekiwany23:07', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/w6-2068/07-04-2024/2325'}
 {'Time': '23:30', 'Destination': 'WIEDEÑ(VIE)', 'Airline': 'Austrian Airlines', 'Code': 'OS599', 'Status': 'Oczekiwany23:17', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/os-599/07-04-2024/2330'}
 {'Time': '23:45', 'Destination': 'PESCARA(PSR)', 'Airline': 'Ryanair', 'Code': 'FR3046', 'Status': 'Oczekiwany23:36', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/fr-3046/07-04-2024/2345'}
-{'Time': '23:45', 'Destination': 'LONDYNGATWICK(LGW)', 'Airline': 'Wizz Air', 'Code': 'W62010', 'Status': 'Oczekiwany23:46', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/w6-2010/07-04-2024/2345'}
-{'Time': '23:50', 'Destination': 'DUBLIN(DUB)', 'Airline': 'Ryanair', 'Code': 'FR2023', 'Status': 'Oczekiwany00:01', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/fr-2023/07-04-2024/2350'}
+{'Time': '23:45', 'Destination': 'LONDYNGATWICK(LGW)', 'Airline': 'Wizz Air', 'Code': 'W62010', 'Status': 'Oczekiwany23:47', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/w6-2010/07-04-2024/2345'}
+{'Time': '23:50', 'Destination': 'DUBLIN(DUB)', 'Airline': 'Ryanair', 'Code': 'FR2023', 'Status': 'Oczekiwany23:58', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/fr-2023/07-04-2024/2350'}
 {'Time': '23:50', 'Destination': 'FRANKFURT(FRA)', 'Airline': 'Lufthansa', 'Code': 'LH1370', 'Status': 'Oczekiwany23:42', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/lh-1370/07-04-2024/2350'}
 {'Time': '23:50', 'Destination': 'WARSZAWA(WAW)', 'Airline': 'LOT', 'Code': 'LO3911', 'Status': '', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/lo-3911/07-04-2024/2350'}
 {'Time': '23:55', 'Destination': 'TELAVIV(TLV)', 'Airline': 'Wizz Air', 'Code': 'W62098', 'Status': 'Oczekiwany00:06', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/przyloty/w6-2098/07-04-2024/2355'}
 Outgoing:
-{'Time': '22:40', 'Destination': 'KOPENHAGA(CPH)', 'Airline': 'Norwegian Air International', 'Code': 'D83565', 'Status': 'LotopóŸniony', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/odloty/d8-3565/07-04-2024/2240'}
+{'Time': '22:40', 'Destination': 'KOPENHAGA(CPH)', 'Airline': 'Norwegian Air International', 'Code': 'D83565', 'Status': 'Wystartowa³22:48', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/odloty/d8-3565/07-04-2024/2240'}
