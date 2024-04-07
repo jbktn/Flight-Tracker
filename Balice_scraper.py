@@ -81,8 +81,8 @@ print_flights(incoming)
 print("Outgoing flights:")
 print_flights(outgoing)
 
-f = open("c:/Users/delve/WebstormProjects/flight-tracker/Balice_data.txt", "w")
-f.write("Incoming:\n")
-write_to_file(f, incoming)
-f.write("Outgoing:\n")
-write_to_file(f, outgoing)
+f_incoming = open("c:/Users/delve/WebstormProjects/flight-tracker/Balice_incoming.txt", "w")
+write_to_file(f_incoming, incoming)
+
+f_outgoing = open("c:/Users/delve/WebstormProjects/flight-tracker/Balice_outgoing.txt", "w")
+write_to_file(f_outgoing, outgoing)
