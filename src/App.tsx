@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import * as logo from './images/plane_icon512.png';
 
-function App() {
+function App() { 
   return (
-    <Navbar/>
+    <div>
+      <img src={logo} alt="logo" />
+      <Navbar/>
+    </div>
   );
 }
 
