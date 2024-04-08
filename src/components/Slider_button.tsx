@@ -9,3 +9,5 @@ const Slider_Button: React.FC = () => {
     </div>
   );
 }
+
+export default Slider_Button;

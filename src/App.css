@@ -7,3 +7,28 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ddd;
+}

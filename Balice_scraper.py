@@ -2,6 +2,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import ssl
 import csv
+import json
 
 IATA_small_database = {
     "FR": "Ryanair",
@@ -41,15 +42,12 @@ def clear_table(table, append_array):
 
         airline = get_operator(code)
 
-        append_array.append({'Time': time, 'Destination': destination, 'Airline': airline,'Code': code,'Status': status, "Link": link})
+        append_array.append(json.dumps({"Time": time, "Destination": destination, "Airline": airline,"Code": code,"Status": status, "Link": link}))
 
 def print_flights(array):
     for flight in array:
         print(flight)
 
-def write_to_file(f, array):
-    for flight in array:
-        f.write(str(flight) + "\n")
 
 context = ssl._create_unverified_context()
 
@@ -81,8 +79,7 @@ print_flights(incoming)
 print("Outgoing flights:")
 print_flights(outgoing)
 
-f_incoming = open("c:/Users/delve/WebstormProjects/flight-tracker/Balice_incoming.txt", "w")
-write_to_file(f_incoming, incoming)
+with open("./src/Mock_Balice_incoming.json", "w") as file:
+    json.dump(incoming, file, indent=4)
 
-f_outgoing = open("c:/Users/delve/WebstormProjects/flight-tracker/Balice_outgoing.txt", "w")
-write_to_file(f_outgoing, outgoing)
+

@@ -1,1 +1,0 @@
-{'Time': '22:40', 'Destination': 'KOPENHAGA(CPH)', 'Airline': 'Norwegian Air International', 'Code': 'D83565', 'Status': 'Wystartowa³22:48', 'Link': 'https://www.krakowairport.pl/pl/pasazer/lot/odloty/d8-3565/07-04-2024/2240'}
