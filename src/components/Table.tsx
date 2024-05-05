@@ -19,16 +19,24 @@ const Table: React.FC = () => {
         <div>
             <table className='Table_v1' id='Table'>
                 <tbody>
-                {tableData.map((row, index) => (
-                <tr key={index}>
-                    <td>{row.Time}</td>
-                    <td>{row.Destination}</td>
-                    <td>{row.Airline}</td>
-                    <td>{row.Code}</td>
-                    <td>{row.Status}</td>
-                    <td><a href={row.Link}>Link</a></td>
-                </tr>
-                ))}
+                    <tr>
+                        <td>Time</td>
+                        <td>Destination</td>
+                        <td>Airline</td>
+                        <td>Code</td>
+                        <td>Status</td>
+                        <td>Link</td>
+                    </tr>
+                    {tableData.map((row, index) => (
+                        <tr key={index}>
+                            <td>{row.Time}</td>
+                            <td>{row.Destination}</td>
+                            <td>{row.Airline}</td>
+                            <td>{row.Code}</td>
+                            <td>{row.Status}</td>
+                            <td><a href={row.Link}>Link</a></td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
